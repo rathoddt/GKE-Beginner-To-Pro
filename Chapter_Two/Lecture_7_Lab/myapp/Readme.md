@@ -1,6 +1,5 @@
-  18  mkdir myapp
-   19  cd myapp/
-   20  docker build -t myapp .
+  `cd myapp/`
+   `docker build -t myapp .`
    21  ls
    22  mv Dokerfile Dockerfile
    23  docker build -t myapp .
