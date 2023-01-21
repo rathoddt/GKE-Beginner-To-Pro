@@ -1,21 +1,21 @@
   `cd myapp/`   
    `docker build -t myapp .`   
-  ` 21  ls` 
-   `22  mv Dokerfile Dockerfile` 
-  ` 23  docker build -t myapp .` 
- `  24  docker tag gcr.io/dilip-rathod/myapp-blue` 
-`25  docker tag myapp gcr.io/dilip-rathod/myapp-blue` 
-`26  docker image ls` 
-`27  docker push gcr.io/dilip-rathod/myapp-blue` 
-`28  docker push gcr.io/playground-s-11-984d7f62/myapp-blue` 
-`29  docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:blue` 
-`30  docker push gcr.io/playground-s-11-984d7f62/myapp:blue` 
-`31  docker build -t myapp .` 
-`32  docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:green` 
-`33  docker image ls` 
-`34  docker push gcr.io/playground-s-11-984d7f62/myapp:green
-`35  docker build -t myapp .` 
-`36  docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:bad` 
+  `ls` 
+   `mv Dokerfile Dockerfile`  
+  `docker build -t myapp .`  
+ `docker tag gcr.io/dilip-rathod/myapp-blue`  
+`docker tag myapp gcr.io/dilip-rathod/myapp-blue`  
+`docker image ls`  
+`docker push gcr.io/dilip-rathod/myapp-blue`  
+`docker push gcr.io/playground-s-11-984d7f62/myapp-blue`  
+`docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:blue`  
+`docker push gcr.io/playground-s-11-984d7f62/myapp:blue` 
+`docker build -t myapp .`  
+`docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:green`   
+`docker image ls`  
+`docker push gcr.io/playground-s-11-984d7f62/myapp:green`  
+`docker build -t myapp .`   
+`docker tag myapp gcr.io/playground-s-11-984d7f62/myapp:bad` 
 `37  docker push gcr.io/playground-s-11-984d7f62/myapp:bad
 `38  ls` 
 `39  kubectl apply -f myapp-deployment.yaml` 
