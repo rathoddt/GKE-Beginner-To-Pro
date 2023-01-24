@@ -44,3 +44,80 @@ We can view the status of rollout status
 kubectl rollout status deployment.v1.apps/myapp-deployment` 
 kubectl rollout history deployment.v1.apps/myapp-deployment` 
 kubectl rollout undo deployment.v1.apps/myapp-deployment` 
+
+# Monitoring, Logging, and Debgugging
+gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project playground-s-11-b12d2812`  
+`kubectl create deployment nginx --image nginx`  
+`kubectl get deployments`  
+`kubectls get pods`  
+`kubectl get pods`  
+`kubectl get all`  
+`kubectl get events`  
+`kubectl describe deployment nginx`  
+`kubectl describe pod pod/nginx-8f458dc5b-xs979`  
+`kubectl describe pod nginx-8f458dc5b-xs979`  
+`kubectl expose deployment nginx --port=80 --type=LoadBalancer`  
+`kubectl get all`  
+`kubectl get logs nginx-8f458dc5b-xs979`  
+`kubectl get logs logs/nginx-8f458dc5b-xs979`  
+`kubectl get logs pods/nginx-8f458dc5b-xs979`  
+`kubectl get logs pod/nginx-8f458dc5b-xs979`  
+`kubectl logs pod/nginx-8f458dc5b-xs979`  
+`kubectl logs nginx-8f458dc5b-xs979`  
+`kubectl logs --selector app=nginx`  
+`kubectl get all`  
+kubctl scale --replicas=10 deployment nginx`  
+`kubectl scale --replicas=10 deployment nginx`  
+`kubectl get pods`  
+`kubectl descibe deployment nginx`  
+`kubectl describe deployment nginx`  
+`kubectl get events`  
+`kubectl scale --replicas=20 deployment nginx`  
+`kubectl get pods`  
+`kubectl scale --replicas=500 deployment nginx`  
+`kubectl get pods`  
+`kubectl scale --replicas=100 deployment nginx`  
+`kubectl get pods`  
+`kubectl get pods | grep Pending | wc -l`  
+`kubectl scale --replicas=50 deployment nginx`  
+`kubectl get pods | grep Pending | wc -l`  
+`kubectl describe pod nginx-8f458dc5b-zl65k`  
+`kubectl describe pods nginx-8f458dc5b-zl65k`  
+`kubectl describe pod nginx-8f458dc5b-x2bjn`  
+`kubectl describe pod nginx-8f458dc5b-w477c`  
+`kubectl scale --replicas=15 deployment nginx`  
+`kubectl get pods`  
+`kubectl get pods | grep Pending | wc -l`  
+`kubectl get pods`  
+`kubectl scale --replicas=8 deployment nginx`  
+`kubectl get pods`  
+`kubectl scale --replicas=2 deployment nginx`  
+git clone https://github.com/rathoddt/GKE-Beginner-To-Pro.git`  
+cd GKE-Beginner-To-Pro/`  
+ls`  
+cd Chapter_T`  
+cd Chapter_Two/Lecture_7_Lab/`  
+ls`  
+cd myapp/`  
+ls`  
+cat requirements.txt`  
+echo "" > requirements.txt`  
+cat requirements.txt`  
+docker build -t myapp .`  
+docker tag myapp gcr.io/playground-s-11-b12d2812/myapp:broken`  
+docker push gcr.io/playground-s-11-b12d2812/myapp:broken`  
+`kubectl nginx deployment nginx`  
+`kubectl delete deployment nginx`  
+`kubectl create deployment --image gcr.io/playground-s-11-b12d2812/myapp:broken badluck2`  
+`kubectl get all`  
+watch `kubectl get pods`  
+`kubectl get pods`  
+`kubectl describe pod badluck2-5896b5fdb-chmwr`  
+`kubectl get pods`  
+`kubectl logs badluck2-5896b5fdb-chmwr`  
+history`  
+man hostory`  
+man history`  
+cat ~/.bash_history`  
+history -w /dev/stdout`  
+history | cut -c 8-
