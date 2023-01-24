@@ -46,7 +46,7 @@ kubectl rollout history deployment.v1.apps/myapp-deployment`
 kubectl rollout undo deployment.v1.apps/myapp-deployment` 
 
 # Monitoring, Logging, and Debgugging
-gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project playground-s-11-b12d2812`  
+`gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project playground-s-11-b12d2812`  
 `kubectl create deployment nginx --image nginx`  
 `kubectl get deployments`  
 `kubectls get pods`  
@@ -66,7 +66,6 @@ gcloud container clusters get-credentials cluster-1 --zone us-central1-c --proje
 `kubectl logs nginx-8f458dc5b-xs979`  
 `kubectl logs --selector app=nginx`  
 `kubectl get all`  
-kubctl scale --replicas=10 deployment nginx`  
 `kubectl scale --replicas=10 deployment nginx`  
 `kubectl get pods`  
 `kubectl descibe deployment nginx`  
@@ -92,32 +91,31 @@ kubctl scale --replicas=10 deployment nginx`
 `kubectl scale --replicas=8 deployment nginx`  
 `kubectl get pods`  
 `kubectl scale --replicas=2 deployment nginx`  
-git clone https://github.com/rathoddt/GKE-Beginner-To-Pro.git`  
-cd GKE-Beginner-To-Pro/`  
-ls`  
-cd Chapter_T`  
-cd Chapter_Two/Lecture_7_Lab/`  
-ls`  
-cd myapp/`  
-ls`  
-cat requirements.txt`  
-echo "" > requirements.txt`  
-cat requirements.txt`  
-docker build -t myapp .`  
-docker tag myapp gcr.io/playground-s-11-b12d2812/myapp:broken`  
-docker push gcr.io/playground-s-11-b12d2812/myapp:broken`  
+`git clone https://github.com/rathoddt/GKE-Beginner-To-Pro.git`  
+`cd GKE-Beginner-To-Pro/`  
+`ls`  
+`cd Chapter_T`  
+`cd Chapter_Two/Lecture_7_Lab/`  
+`ls`  
+`cd myapp/`  
+`ls`  
+`cat requirements.txt`  
+`echo "" > requirements.txt`  
+`cat requirements.txt`  
+`docker build -t myapp .`  
+`docker tag myapp gcr.io/playground-s-11-b12d2812/myapp:broken`  
+`docker push gcr.io/playground-s-11-b12d2812/myapp:broken`  
 `kubectl nginx deployment nginx`  
 `kubectl delete deployment nginx`  
 `kubectl create deployment --image gcr.io/playground-s-11-b12d2812/myapp:broken badluck2`  
 `kubectl get all`  
-watch `kubectl get pods`  
+`watch kubectl get pods`  
 `kubectl get pods`  
 `kubectl describe pod badluck2-5896b5fdb-chmwr`  
 `kubectl get pods`  
 `kubectl logs badluck2-5896b5fdb-chmwr`  
 history`  
-man hostory`  
-man history`  
-cat ~/.bash_history`  
-history -w /dev/stdout`  
-history | cut -c 8-
+`man history`  
+`cat ~/.bash_history`  
+`history -w /dev/stdout`  
+`history | cut -c 8-
