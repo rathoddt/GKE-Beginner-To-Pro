@@ -114,8 +114,9 @@ kubectl rollout undo deployment.v1.apps/myapp-deployment`
 `kubectl describe pod badluck2-5896b5fdb-chmwr`  
 `kubectl get pods`  
 `kubectl logs badluck2-5896b5fdb-chmwr`  
-history`  
+`history`  
 `man history`  
+Printing history without libe no
 `cat ~/.bash_history`  
 `history -w /dev/stdout`  
-`history | cut -c 8-
+`history | cut -c 8-`
